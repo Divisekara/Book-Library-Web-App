@@ -1,0 +1,9 @@
+commands -
+
+npm init -y
+npm i express
+npm i express-ejs-layouts
+npm i ejs
+
+npm i --save-dev nodemon
+
