@@ -1,0 +1,1 @@
+In this I create a simple website with javascript following the MVC architecture
