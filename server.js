@@ -9,6 +9,7 @@ const expressLayouts = require('express-ejs-layouts')
 
 const indexRouter = require('./routes/index')
 const homeRouter =  require('./routes/home')
+const authorRouter = require('./routes/authors')
 
 app.set('view engine', 'ejs')
 // __dirname denote the absolute path to the folder.
@@ -29,6 +30,7 @@ db.once('open', () => console.log('Connected to Mongoose'))
 
 app.use('/', indexRouter)
 app.use('/', homeRouter)
+app.use('/authors', authorRouter)
 
 app.listen(process.env.PORT || 8080)
 
